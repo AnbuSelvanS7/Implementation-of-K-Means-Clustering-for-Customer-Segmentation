@@ -39,7 +39,7 @@ d.isnull().sum()
 
 ![image](https://github.com/user-attachments/assets/d7918bf7-5721-4666-a228-2eb83a2ed48a)
 # Elbow method graph (wcss vs each iteration):
-
+```
 from sklearn.cluster import KMeans
 wcss = []
 for i in range(1,11):
@@ -54,10 +54,10 @@ km=KMeans(n_clusters=5)
 km.fit(d.iloc[:,3:])
 y_pred = km.predict(d.iloc[:,3:])
 y_pred
-
+```
 ![image](https://github.com/user-attachments/assets/8393afca-931b-4256-bd22-193ddf679faf)
 # Cluster represnting customer segments-graph:
-
+```
 d["clusters"]=y_pred
 df0=d[d["clusters"]==0]
 df1=d[d["clusters"]==1]
@@ -71,7 +71,7 @@ plt.scatter(df3["Annual Income (k$)"],df3["Spending Score (1-100)"],c="blue",lab
 plt.scatter(df4["Annual Income (k$)"],df4["Spending Score (1-100)"],c="black",label="clusters4")
 plt.legend()
 plt.title("Customer Segments")
-
+```
 ![image](https://github.com/user-attachments/assets/fb99ffd3-39ac-4af4-bd15-fabe249660bc)
 
 ## Result:
