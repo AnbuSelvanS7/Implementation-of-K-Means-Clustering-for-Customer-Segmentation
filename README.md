@@ -14,7 +14,7 @@ To write a program to implement the K Means Clustering for Customer Segmentation
 4. Print the outputs and end the program
 
 ## Program:
-
+```
 Program to implement the K Means Clustering for Customer Segmentation.
 Developed by: ANBUSELVAN S
 RegisterNumber:  212223110003
@@ -23,20 +23,20 @@ RegisterNumber:  212223110003
 import pandas as pd 
 import matplotlib.pyplot as plt
 d=pd.read_csv("Mall_Customers.csv")
-
+```
 # DATA SET:
-
+```
 d.head()
-
+```
 ![image](https://github.com/user-attachments/assets/675251df-59d0-4028-ade4-5c61f756df1c)
 # DATA INFO:
-
+```
 d.info()
-
+```
 ![image](https://github.com/user-attachments/assets/be535a0a-2977-42e4-bacd-8b8030c82873)
-
+```
 d.isnull().sum()
-
+```
 ![image](https://github.com/user-attachments/assets/d7918bf7-5721-4666-a228-2eb83a2ed48a)
 # Elbow method graph (wcss vs each iteration):
 ```
